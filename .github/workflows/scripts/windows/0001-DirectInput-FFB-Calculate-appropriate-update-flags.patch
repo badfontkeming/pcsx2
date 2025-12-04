@@ -90,7 +90,7 @@ index 79c4b3501..68ec30526 100644
 +        flags |= DIEP_TYPESPECIFICPARAMS;
 +    }
 +
-+    if (flags == 0) {
++    if (flags == 0 || 1) {
 +        /* Awkward: SDL_UpdateHapticEffect was called, but nothing was changed.
 +         * Calling IDirectInputEffect_SetParameters with no flags is nonsense,
 +         * so our options are to either send all the flags, or exit early.
